@@ -9,3 +9,6 @@ Meaning `ParameterStoreConfigDataLocationResolver` was invoked and profile is de
 Go to `/config` folder and uncomment the `application-dev.properties`.
 Binder now who binds properties will see profile specific values such as `spring.cloud.aws.parameterstore.enabled=false` binded.
 This will disable loading of ParamStore for dev profile and `ParameterStoreConfigDataLocationResolver` will mock `ConfigData` as empty resource.
+
+
+Resolver link: https://github.com/awspring/spring-cloud-aws/blob/3.2.x/spring-cloud-aws-autoconfigure/src/main/java/io/awspring/cloud/autoconfigure/config/parameterstore/ParameterStoreConfigDataLocationResolver.java
